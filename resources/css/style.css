@@ -262,6 +262,19 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -273,6 +286,9 @@ header {
     z-index: 9999;
 }
 
+
+.sticky .main-nav { margin-top: 20px; }
+
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 16px 0;
@@ -283,7 +299,7 @@ header {
 .sticky .logo {display: none; }
 .sticky .logo-black { display: block; }
 
-.sticky .main-nav { margin-top: 20px; }
+
 
 
 
@@ -667,6 +683,30 @@ footer p {
     font-size: 90%;
     margin-top: 20px;
 }
+
+
+/* ----------------------------------------- */
+/* Animation */
+/* ----------------------------------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated {
+    opacity: 1;
+}
+
 
 
 
